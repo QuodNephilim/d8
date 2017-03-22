@@ -1,0 +1,50 @@
+uuid: a9f6dde1-c42c-4f74-aed6-6f30aff5b4bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.images
+    - field.field.block_content.images.field_druga_pikca
+    - field.field.block_content.images.field_persa_pikca
+    - field.field.block_content.images.field_tre
+    - field.field.block_content.images.field_treta_pikca
+  module:
+    - image
+id: block_content.images.default
+targetEntityType: block_content
+bundle: images
+mode: default
+content:
+  field_druga_pikca:
+    weight: 2
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_persa_pikca:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_tre:
+    weight: 3
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_treta_pikca:
+    weight: 4
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden: {  }

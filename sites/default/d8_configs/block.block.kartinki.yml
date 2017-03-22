@@ -1,0 +1,25 @@
+uuid: c9a1a8e0-bf7b-4d9a-b2fa-d9ee6130da48
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:images:ae2e191f-e922-424a-bc5a-7db30520c5a8'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: kartinki
+theme: bartik
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:ae2e191f-e922-424a-bc5a-7db30520c5a8'
+settings:
+  id: 'block_content:ae2e191f-e922-424a-bc5a-7db30520c5a8'
+  label: Картинки
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

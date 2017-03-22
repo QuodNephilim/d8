@@ -1,0 +1,21 @@
+uuid: edf49b52-e988-4225-bfb3-d1300f6e0c68
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pdf
+    - field.storage.block_content.field_opisanie
+  module:
+    - text
+id: block_content.pdf.field_opisanie
+field_name: field_opisanie
+entity_type: block_content
+bundle: pdf
+label: Описание
+description: 'Опис файлу pdf'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

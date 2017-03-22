@@ -1,0 +1,30 @@
+uuid: bafb28f4-7b79-4a9a-b271-73a5961ba19c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - file
+    - image
+id: block_content.field_treta_pikca
+field_name: field_treta_pikca
+entity_type: block_content
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: bb848dbf-c5a9-4c89-b53c-be1986038a51
+    alt: ''
+    title: ''
+    width: 1440
+    height: 597
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

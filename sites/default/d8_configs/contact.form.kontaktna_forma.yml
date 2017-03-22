@@ -1,0 +1,12 @@
+uuid: 392451ff-cb29-47fe-93ee-d74c960cc41f
+langcode: en
+status: true
+dependencies: {  }
+id: kontaktna_forma
+label: 'Контактна форма'
+recipients:
+  - nillarm.na@gmail.com
+reply: ''
+weight: 4
+message: 'Your Message'
+redirect: /

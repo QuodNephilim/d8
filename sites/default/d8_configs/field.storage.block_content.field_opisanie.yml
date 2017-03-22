@@ -1,0 +1,20 @@
+uuid: 00b063fa-b786-4dcb-b75f-23231fcb40c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_opisanie
+field_name: field_opisanie
+entity_type: block_content
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
