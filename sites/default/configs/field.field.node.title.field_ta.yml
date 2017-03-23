@@ -1,0 +1,30 @@
+uuid: 756f7658-b11a-4630-ad8d-a10d68577e5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ta
+    - node.type.title
+    - taxonomy.vocabulary.color
+    - taxonomy.vocabulary.tags
+id: node.title.field_ta
+field_name: field_ta
+entity_type: node
+bundle: title
+label: tag
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      color: color
+      tags: tags
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: color
+field_type: entity_reference

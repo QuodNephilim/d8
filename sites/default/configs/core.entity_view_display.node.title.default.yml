@@ -1,0 +1,65 @@
+uuid: b012a2ea-c6ff-43b0-a39c-494901e6f13e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.title.body
+    - field.field.node.title.field_image_collection
+    - field.field.node.title.field_link
+    - field.field.node.title.field_photo
+    - field.field.node.title.field_ta
+    - node.type.title
+  module:
+    - field_collection
+    - image
+    - link
+    - text
+    - user
+id: node.title.default
+targetEntityType: node
+bundle: title
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_image_collection:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_list
+  field_link:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_photo:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_ta:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

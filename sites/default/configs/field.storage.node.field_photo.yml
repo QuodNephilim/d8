@@ -1,0 +1,30 @@
+uuid: ff24ff95-18f2-4b8d-ba9d-1ed100e4b808
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_photo
+field_name: field_photo
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: fef3fcd1-e7cb-482e-9222-872a02bbde95
+    alt: '21pilots crazy'
+    title: ''
+    width: 1440
+    height: 597
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

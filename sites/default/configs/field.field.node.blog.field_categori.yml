@@ -1,0 +1,38 @@
+uuid: e0726e57-7f3f-4fcf-aead-8fa4abb6bea3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categori
+    - node.type.blog
+    - taxonomy.vocabulary.categories
+  content:
+    - 'taxonomy_term:categories:54fe9e60-7c0b-4f6a-b2c6-054a0be69efa'
+    - 'taxonomy_term:categories:afa62c96-1f07-44bb-a93f-6a3895b58f25'
+    - 'taxonomy_term:categories:bbf9256d-497f-47e7-8db3-a507e787d384'
+id: node.blog.field_categori
+field_name: field_categori
+entity_type: node
+bundle: blog
+label: Categories
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: bbf9256d-497f-47e7-8db3-a507e787d384
+  -
+    target_uuid: afa62c96-1f07-44bb-a93f-6a3895b58f25
+  -
+    target_uuid: 54fe9e60-7c0b-4f6a-b2c6-054a0be69efa
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categories: categories
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

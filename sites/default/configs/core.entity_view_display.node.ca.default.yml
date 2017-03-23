@@ -1,0 +1,26 @@
+uuid: 8fd10fbf-aef1-49ea-b1d7-2d72809f5d9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ca.body
+    - node.type.ca
+  module:
+    - text
+    - user
+id: node.ca.default
+targetEntityType: node
+bundle: ca
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+  sharethis:
+    weight: 10
+hidden: {  }

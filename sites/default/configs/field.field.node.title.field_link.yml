@@ -1,0 +1,28 @@
+uuid: c49857f1-bf80-4833-bd91-ef4db75e1780
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.title
+  module:
+    - link
+id: node.title.field_link
+field_name: field_link
+entity_type: node
+bundle: title
+label: link
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/vk.com/weaponofsociety'
+    title: SOCIETY
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link
