@@ -1,0 +1,29 @@
+uuid: f8d84096-7c93-4395-b2a1-956295dd2aba
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: exposedformnewspage_1
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:news-page_1'
+settings:
+  id: 'views_exposed_filter_block:news-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /news
+    negate: false
+    context_mapping: {  }

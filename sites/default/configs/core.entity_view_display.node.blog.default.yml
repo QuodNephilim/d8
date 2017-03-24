@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_display.comment.comment.default
+    - field.field.node.blog.body
     - field.field.node.blog.field_categori
     - field.field.node.blog.field_comment
     - field.field.node.blog.field_image
@@ -14,12 +15,19 @@ dependencies:
     - comment
     - image
     - link
+    - text
     - user
 id: node.blog.default
 targetEntityType: node
 bundle: blog
 mode: default
 content:
+  body:
+    weight: 11
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
   field_categori:
     weight: 4
     label: above
@@ -58,5 +66,7 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
+  sharethis:
+    weight: 10
 hidden:
   field_priority: true

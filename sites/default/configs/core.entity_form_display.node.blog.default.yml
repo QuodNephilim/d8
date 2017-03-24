@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.blog.body
     - field.field.node.blog.field_categori
     - field.field.node.blog.field_comment
     - field.field.node.blog.field_image
@@ -15,11 +16,20 @@ dependencies:
     - image
     - link
     - path
+    - text
 id: node.blog.default
 targetEntityType: node
 bundle: blog
 mode: default
 content:
+  body:
+    weight: 29
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
   created:
     type: datetime_timestamp
     weight: 3
